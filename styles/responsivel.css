@@ -1,0 +1,271 @@
+#btn-mobile {
+  display: none;
+}
+
+@media(max-width:1150px) {
+  .recomendados {
+    width: 95%;
+  }
+}
+
+@media(max-width:1080px) {
+  .recomendados {
+    width: 97%;
+    height: 100%;
+    margin-bottom: 100PX;
+  }
+
+
+}
+
+@media(max-width:1000px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .main {
+    width: 98%;
+    margin: 0 auto;
+  }
+
+  .card-sidebar {
+    width: 48%;
+    height: 100%;
+  }
+
+  .img-card {
+    height: 100px;
+    width: 250px;
+  }
+
+  .sidebar {
+    width: 98%;
+    margin: 0 auto;
+  }
+
+  .container-card-aside {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .recomendados-container {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  .recomendados-container-inner {
+    width: 45%;
+    margin-right: 3%;
+    margin-top: 3%;
+  }
+
+  .footer-container {
+    width: 98%;
+  }
+
+  .recomendados {
+    width: 98%;
+  }
+
+  #hamburger {
+    border-top: 2px solid currentColor;
+    width: 20px;
+    color: currentColor;
+    display: block;
+  }
+
+  #btn-mobile {
+
+    display: flex;
+    padding: .5rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: white;
+    gap: 1rem;
+
+  }
+
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 20px;
+    margin-top: 5px;
+    background-color: currentColor;
+    transition: .3s;
+    position: relative;
+
+
+  }
+
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    right: 0px;
+    height: 0%;
+    background-color: rgba(24, 23, 40, 0.8);
+    z-index: 99999;
+    transition: .6s;
+    visibility: hidden;
+    overflow-y: hidden;
+    top: 100%;
+  }
+
+  #menu li {
+    padding: 1rem 0;
+    margin: 0 1rem;
+  }
+
+  .hide {
+    /*classe para travar o scroll enquanto o menu responsivo estiver ativo*/
+    overflow: hidden;
+  }
+
+  #nav #menu li {
+    font-size: 50px;
+    border-bottom: solid 2px rgba(121, 121, 121, 0.213);
+
+  }
+
+  #nav.active #menu {
+    background: #00510f;
+    height: calc(100vh - 5px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  #nav.active2 #menu {
+    background: #00510f;
+
+    visibility: visible;
+    top: 88px;
+    overflow-y: auto;
+    height: calc(100vh - 61.59px);
+  }
+
+  #nav.active #menu li {
+    font-size: 1.5rem;
+    border-bottom: solid 2px rgba(121, 121, 121, 0.213);
+  }
+
+  #nav #menu li {
+    font-size: 1.5rem;
+    border-bottom: solid 2px rgba(84, 26, 26, 0.213);
+  }
+
+  #nav.active .nave {
+    margin-left: 0px;
+  }
+
+  header {
+    border-bottom-color: transparent;
+
+  }
+
+  #nav.active #hamburger,
+  #nav.active2 #hamburger {
+    border-top: transparent;
+  }
+
+  #nav.active #hamburger::before,
+  #nav.active2 #hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburger::after,
+  #nav.active2 #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+}
+
+@media(max-width:700px) {
+
+
+
+  #txtBusca {
+    width: 100px;
+  }
+
+  .inner-content {
+    text-align: center;
+  }
+
+  .footer-main {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+
+  .footer-main .logo-footer {
+    width: auto;
+  }
+
+  .inner-content {
+    margin-top: 0px;
+  }
+
+  .footer {
+    height: 350px;
+  }
+
+  .f-body {
+    margin-bottom: 10px;
+  }
+
+  .f-icon {
+    margin-bottom: 10px;
+  }
+}
+
+
+@media (max-width:520px) {
+  .recomendados-container-inner {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  .card-sidebar {
+    width: 100%;
+  }
+}
+
+
+@media (max-width:430px) {
+  .input-header {
+    display: none;
+  }
+
+  .footer {
+    width: 100%;
+  }
+
+  .f-c-down div {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width:380px) {
+  .f-c-down div {
+    margin-top: 0px;
+  }
+
+  .f-c-down div {
+    justify-content: space-around;
+    margin: 0;
+  }
+}
