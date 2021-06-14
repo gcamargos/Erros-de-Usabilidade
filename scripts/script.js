@@ -1,5 +1,7 @@
 let conteiner = document.querySelector('.content-yes')
 let msg = document.querySelector('.msg-content')
+
+//Funções para mudar mensagem do input 
 function active_yes(){
   msg.innerHTML = 'Ficamos felizes em ajudar. Diga-nos como podemos melhorar! '
 
@@ -13,11 +15,13 @@ function active_no(){
   msg.innerHTML = 'Lamentamos não ter ajudado. Diga-nos como melhorar'
 
 }
+/**/
 
+//Função para o rolamento do mouse mudar o estilo do header 
 window.addEventListener('scroll', function(){
   let header = document.querySelector('header')
-  let windowscrol = window.scrollY > 10; /*quando o window tiver rolado mais de 500 pixel no eixo y */
-  header.classList.toggle('scrolling-active', windowscrol)
+  let windowscrol = window.scrollY > 10; /*quando o window tiver rolado mais de 10 pixel no eixo y */
+  header.classList.toggle('scrolling-active', windowscrol) // alterne a função scrolling-active no header
 })
 
 
